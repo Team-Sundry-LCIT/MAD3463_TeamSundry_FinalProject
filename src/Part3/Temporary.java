@@ -29,4 +29,11 @@ public class Temporary implements TemporaryInterface {
     public void setAccumulatedHours(int accumulatedHours) {
         this.accumulatedHours = accumulatedHours;
     }
+
+    @Override
+    public String toString() {
+        return "he is a temporary employee with " + hourlySalary +
+                " hourly salary and he has worked for " + accumulatedHours +
+                " hours";
+    }
 }
