@@ -11,7 +11,7 @@ public class Temporary implements TemporaryInterface {
 
     @Override
     public double accumulatedSalary() {
-        return 0;
+        return hourlySalary * accumulatedHours;
     }
 
     public int getHourlySalary() {
