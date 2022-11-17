@@ -49,4 +49,14 @@ public class Motorcycle implements MotorcycleInterface {
     public void setCategory(String category) {
         this.category = category;
     }
+
+    @Override
+    public String toString() {
+        return "Employee has a " +
+                "\t- Model:" + make + '\'' +
+                "\t- Plate:" + plate + '\'' +
+                "\t- Colour:" + color + '\'' +
+                "\t- Category:" + category + '\'' +
+                "\t- " + (sideCar ? "with" : "without") + "a sidecar" + '\'';
+    }
 }
