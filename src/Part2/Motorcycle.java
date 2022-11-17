@@ -1,7 +1,9 @@
 package Part2;
 
-
-public class Motorcycle {
+interface MotorcycleInterface {
+    boolean sideCar = false;
+}
+public class Motorcycle implements MotorcycleInterface {
     private boolean sideCar = false;
     private String make;
     private String plate;
