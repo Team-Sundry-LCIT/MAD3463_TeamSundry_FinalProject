@@ -1,8 +1,6 @@
 package Part3;
 
-public class Temporary implements EmployeeContract {
-    @Override
-    public double accumulatedSalary() {
-        return EmployeeContract.super.accumulatedSalary();
-    }
+public class Temporary {
+    private int hourlySalary = 0;
+    private int accumulatedHours = 0;
 }
