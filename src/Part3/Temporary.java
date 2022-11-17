@@ -13,4 +13,20 @@ public class Temporary implements TemporaryInterface {
     public double accumulatedSalary() {
         return 0;
     }
+
+    public int getHourlySalary() {
+        return hourlySalary;
+    }
+
+    public void setHourlySalary(int hourlySalary) {
+        this.hourlySalary = hourlySalary;
+    }
+
+    public int getAccumulatedHours() {
+        return accumulatedHours;
+    }
+
+    public void setAccumulatedHours(int accumulatedHours) {
+        this.accumulatedHours = accumulatedHours;
+    }
 }
