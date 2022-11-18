@@ -2,10 +2,10 @@ package Part2;
 
 public abstract class Vehicle {
 
-    private String make;
-    private String plate;
-    private String color;
-    private String category;
+    private String make = "";
+    private String plate = "";
+    private String color = "";
+    private String category = "";
 
     public String getMake() {
         return make;
@@ -37,6 +37,13 @@ public abstract class Vehicle {
 
     public void setCategory(String category) {
         this.category = category;
+    }
+
+    public Vehicle(String make, String plate, String color, String category) {
+        this.setMake(make);
+        this.setPlate(plate);
+        this.setColor(color);
+        this.setCategory(category);
     }
 
     @Override

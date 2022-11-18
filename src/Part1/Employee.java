@@ -1,17 +1,21 @@
 package Part1;
 
+import Part2.Vehicle;
+
 public abstract class Employee {
-    private int name;
+    private String name;
     private int birthYear;
     private int age;
     private int monthlyIncome;
     private int rate;
 
-    public int getName() {
+    private Vehicle vehicle;
+
+    public String getName() {
         return name;
     }
 
-    public void setName(int name) {
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -45,5 +49,26 @@ public abstract class Employee {
 
     public void setRate(int rate) {
         this.rate = rate;
+    }
+
+    public Vehicle getVehicle() {
+        return vehicle;
+    }
+
+    public void setVehicle(Vehicle vehicle) {
+        this.vehicle = vehicle;
+    }
+
+    public abstract double getAnnualIncome();
+
+    public Employee(String name, int birthYear,int rate,Vehicle vehicle){
+        this.setName(name);
+        this.setBirthYear(birthYear);
+        this.setRate(rate);
+        this.setVehicle(vehicle);
+    }
+
+    public void printData(){
+        System.out.println("We have a new employee: " + getName() + " a " + getClass().getSimpleName() );
     }
 }

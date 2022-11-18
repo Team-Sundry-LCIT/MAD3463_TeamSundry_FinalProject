@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab703114-90cb-4b8c-9a3c-fbf6d3735f21" name="Changes" comment="employee abstract class with setter/getter">
+    <list default="true" id="ab703114-90cb-4b8c-9a3c-fbf6d3735f21" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Simple.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MAD3463_TeamSundry_FinalProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MAD3463_TeamSundry_FinalProject.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Part1/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part1/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Part1/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part1/Tester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Part2/Motorcycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part2/Motorcycle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Part2/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part2/Vehicle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +23,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin File" />
         <option value="Class" />
       </list>
     </option>
@@ -59,7 +66,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668730719331</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="abstract vehicle class with getter/setter and class description (toString)">
+      <created>1668731234135</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668731234135</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -75,6 +89,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="employee abstract class with setter/getter" />
-    <option name="LAST_COMMIT_MESSAGE" value="employee abstract class with setter/getter" />
+    <MESSAGE value="abstract vehicle class with getter/setter and class description (toString)" />
+    <option name="LAST_COMMIT_MESSAGE" value="abstract vehicle class with getter/setter and class description (toString)" />
   </component>
 </project>
