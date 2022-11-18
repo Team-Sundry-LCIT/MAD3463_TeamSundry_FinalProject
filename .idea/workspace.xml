@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab703114-90cb-4b8c-9a3c-fbf6d3735f21" name="Changes" comment="">
+    <list default="true" id="ab703114-90cb-4b8c-9a3c-fbf6d3735f21" name="Changes" comment="employee abstract class with setter/getter">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Part1/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part1/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Part2/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part2/Vehicle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +52,14 @@
       <option name="presentableId" value="Default" />
       <updated>1668706860033</updated>
     </task>
+    <task id="LOCAL-00001" summary="employee abstract class with setter/getter">
+      <created>1668730719331</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1668730719331</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -63,5 +72,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="employee abstract class with setter/getter" />
+    <option name="LAST_COMMIT_MESSAGE" value="employee abstract class with setter/getter" />
   </component>
 </project>

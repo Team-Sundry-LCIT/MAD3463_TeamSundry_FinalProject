@@ -1,6 +1,6 @@
 package Part1;
 
-abstract class Employee {
+public abstract class Employee {
     private int name;
     private int birthYear;
     private int age;
