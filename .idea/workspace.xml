@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab703114-90cb-4b8c-9a3c-fbf6d3735f21" name="Changes" comment="">
+    <list default="true" id="ab703114-90cb-4b8c-9a3c-fbf6d3735f21" name="Changes" comment="-constructor on vehicle class.&#10;-add vehicle variable on employee class along with its setter/getter.&#10;-constructor for employee class and default print function.">
       <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Simple.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MAD3463_TeamSundry_FinalProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MAD3463_TeamSundry_FinalProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Part1/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part1/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Part1/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part1/Tester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Part2/Motorcycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part2/Motorcycle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Part2/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part2/Vehicle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +67,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668731234135</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="-constructor on vehicle class.&#10;-add vehicle variable on employee class along with its setter/getter.&#10;-constructor for employee class and default print function.">
+      <created>1668735292094</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668735292094</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -90,6 +91,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="employee abstract class with setter/getter" />
     <MESSAGE value="abstract vehicle class with getter/setter and class description (toString)" />
-    <option name="LAST_COMMIT_MESSAGE" value="abstract vehicle class with getter/setter and class description (toString)" />
+    <MESSAGE value="-constructor on vehicle class.&#10;-add vehicle variable on employee class along with its setter/getter.&#10;-constructor for employee class and default print function." />
+    <option name="LAST_COMMIT_MESSAGE" value="-constructor on vehicle class.&#10;-add vehicle variable on employee class along with its setter/getter.&#10;-constructor for employee class and default print function." />
   </component>
 </project>

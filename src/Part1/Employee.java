@@ -71,4 +71,14 @@ public abstract class Employee {
     public void printData(){
         System.out.println("We have a new employee: " + getName() + " a " + getClass().getSimpleName() );
     }
+
+    @Override
+    public String toString() {
+        return "Name: " + getName() + ", a " + getClass().getSimpleName() +
+                "\nAge: "+ age +
+                "\n"+ vehicle +
+                "\n" + name + " has Occupation rate: " + rate
+                ;
+    }
+
 }
