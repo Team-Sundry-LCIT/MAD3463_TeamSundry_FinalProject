@@ -2,6 +2,8 @@ package Part1;
 
 import Part2.Vehicle;
 
+import java.util.Calendar;
+
 public abstract class Employee {
     private String name;
     private int birthYear;
@@ -64,7 +66,13 @@ public abstract class Employee {
     public Employee(String name, int birthYear,int rate,Vehicle vehicle){
         this.setName(name);
         this.setBirthYear(birthYear);
-        this.setRate(rate);
+        if(rate < 10){
+            setRate(10);
+        }
+        /*
+            for else -> set rate as min value between 100 and passed argument. since rate shouldn't be more than 100.
+         */
+        else setRate(Math.min(rate, 100));
         this.setVehicle(vehicle);
     }
 
@@ -72,10 +80,16 @@ public abstract class Employee {
         System.out.println("We have a new employee: " + getName() + " a " + getClass().getSimpleName() );
     }
 
+    public int calculateAge(){
+        int currentYear = Calendar.getInstance().get(Calendar.YEAR);
+//        int currentYear = Year.now().getValue();
+        return currentYear - getBirthYear();
+    }
+
     @Override
     public String toString() {
         return "Name: " + getName() + ", a " + getClass().getSimpleName() +
-                "\nAge: "+ age +
+                "\nAge: "+ calculateAge() +
                 "\n"+ vehicle +
                 "\n" + name + " has Occupation rate: " + rate
                 ;
