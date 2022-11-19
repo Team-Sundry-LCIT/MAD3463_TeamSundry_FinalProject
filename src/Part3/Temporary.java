@@ -4,9 +4,9 @@ public class Temporary implements EmployeeContract  {
     private int hourlySalary = 0;
     private int accumulatedHours = 0;
 
-    @Override
-    public String contractInfo() {
-        return super.toString() + " he is a temporary employee with " + hourlySalary + " hourly salary and he has worked for " + accumulatedHours +" hours";
+    public Temporary(int hourlySalary, int accumulatedHours) {
+        this.hourlySalary = hourlySalary;
+        this.accumulatedHours = accumulatedHours;
     }
 
     @Override
@@ -32,7 +32,7 @@ public class Temporary implements EmployeeContract  {
 
     @Override
     public String toString() {
-        return "he is a temporary employee with " + hourlySalary +
+        return super.toString() + "he is a temporary employee with " + hourlySalary +
                 " hourly salary and he has worked for " + accumulatedHours +
                 " hours";
     }
