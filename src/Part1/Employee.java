@@ -12,8 +12,16 @@ public abstract class Employee implements EmployeeContract {
     private int rate;
 
     private Vehicle vehicle;
+    public EmployeeContract contract;
 
-    private EmployeeContract contract;
+    public EmployeeContract getContract() {
+        return contract;
+    }
+
+    public void setContract(EmployeeContract contract) {
+        this.contract = contract;
+    }
+
 
     public String getName() {
         return name;
@@ -109,20 +117,12 @@ public abstract class Employee implements EmployeeContract {
     }
 
     public void signContract(EmployeeContract contract) {
-        this.monthlyIncome = this.accumulatedSalary();
-        this.contract = contract;
+        this.setMonthlyIncome(this.accumulatedSalary());
+        this.setContract(contract);
     }
 
     public String contractInfo() {
-//        if type(of: self) == Manager.self {
-//            return "\(name) is a manager."
-//        } else if type(of: self) == Programmer.self {
-//            return "\(name) is a programmer."
-//        } else if type(of: self) == Tester.self {
-//            return "\(name) is a tester."
-//        }
-
-        return this.name;
+        return getName() + " is a " + getClass().getSimpleName();
     }
 
 }

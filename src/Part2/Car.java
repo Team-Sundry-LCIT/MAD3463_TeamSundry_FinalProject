@@ -25,8 +25,8 @@ public class Car extends Vehicle {
 
     public Car(String make, String plate, String color, String category, String gear, String type) {
         super(make, plate, color, category);
-        this.gear = gear;
-        this.type = type;
+        this.setGear(gear);
+        this.setType(type);
     }
 
     public Car(String make, String plate, String color, String category) {
@@ -35,13 +35,10 @@ public class Car extends Vehicle {
 
     @Override
     public String toString() {
-
-        String ownsACar = "Employee has a car";
-
         String description =
                 "\n\t- Gear Type: " + gear +
                 "\n\t- Type: " + type ;
 
-        return ownsACar + super.toString() + description;
+        return super.toString() + description;
     }
 }
