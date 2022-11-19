@@ -32,4 +32,12 @@ public class Car extends Vehicle {
     public Car(String make, String plate, String color, String category) {
         super(make, plate, color, category);
     }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "gear='" + gear + '\'' +
+                ", type='" + type + '\'' +
+                '}';
+    }
 }
