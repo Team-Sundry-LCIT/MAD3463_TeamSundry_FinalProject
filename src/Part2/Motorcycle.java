@@ -1,4 +1,30 @@
 package Part2;
+public class Motorcycle extends Vehicle {
+    private boolean sideCar = false;
 
-public class Motorcycle {
+    public Motorcycle(String make, String plate, String color, String category) {
+        super(make, plate, color, category);
+    }
+
+    public Motorcycle(String make, String plate, String color, String category, boolean sideCar) {
+        super(make, plate, color, category);
+        this.sideCar = sideCar;
+    }
+
+    public boolean isSideCar() {
+        return sideCar;
+    }
+
+    public void setSideCar(boolean sideCar) {
+        this.sideCar = sideCar;
+    }
+
+    @Override
+    public String toString() {
+
+        String description =
+                "\n\t- " + (sideCar ? "with" : "without") + "a sidecar";
+
+        return super.toString() + description;
+    }
 }
