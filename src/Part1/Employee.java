@@ -13,7 +13,15 @@ public abstract class Employee implements EmployeeContract {
 
     private Vehicle vehicle;
 
-    private EmployeeContract contract;
+    public EmployeeContract getContract() {
+        return contract;
+    }
+
+    public void setContract(EmployeeContract contract) {
+        this.contract = contract;
+    }
+
+    public EmployeeContract contract;
 
     public String getName() {
         return name;

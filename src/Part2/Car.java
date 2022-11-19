@@ -35,13 +35,10 @@ public class Car extends Vehicle {
 
     @Override
     public String toString() {
-
-        String ownsACar = "Employee has a car";
-
         String description =
                 "\n\t- Gear Type: " + gear +
                 "\n\t- Type: " + type ;
 
-        return ownsACar + super.toString() + description;
+        return super.toString() + description;
     }
 }

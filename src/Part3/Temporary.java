@@ -5,6 +5,11 @@ public class Temporary implements EmployeeContract  {
     private int accumulatedHours = 0;
 
     @Override
+    public String contractInfo() {
+        return super.toString() + " he is a temporary employee with " + hourlySalary + " hourly salary and he has worked for " + accumulatedHours +" hours";
+    }
+
+    @Override
     public double accumulatedSalary() {
         return hourlySalary * accumulatedHours;
     }
