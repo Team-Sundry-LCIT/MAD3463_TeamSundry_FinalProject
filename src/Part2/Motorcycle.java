@@ -22,11 +22,9 @@ public class Motorcycle extends Vehicle {
     @Override
     public String toString() {
 
-        String ownsAMotor = "Employee has a Motorcycle";
-
         String description =
                 "\n\t- " + (sideCar ? "with" : "without") + "a sidecar";
 
-        return ownsAMotor + super.toString() + description;
+        return super.toString() + description;
     }
 }
