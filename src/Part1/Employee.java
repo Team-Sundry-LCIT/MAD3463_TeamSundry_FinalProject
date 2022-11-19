@@ -12,6 +12,7 @@ public abstract class Employee implements EmployeeContract {
     private int rate;
 
     private Vehicle vehicle;
+    public EmployeeContract contract;
 
     public EmployeeContract getContract() {
         return contract;
@@ -21,7 +22,6 @@ public abstract class Employee implements EmployeeContract {
         this.contract = contract;
     }
 
-    public EmployeeContract contract;
 
     public String getName() {
         return name;
@@ -117,8 +117,8 @@ public abstract class Employee implements EmployeeContract {
     }
 
     public void signContract(EmployeeContract contract) {
-        this.monthlyIncome = this.accumulatedSalary();
-        this.contract = contract;
+        this.setMonthlyIncome(this.accumulatedSalary());
+        this.setContract(contract);
     }
 
     public String contractInfo() {
