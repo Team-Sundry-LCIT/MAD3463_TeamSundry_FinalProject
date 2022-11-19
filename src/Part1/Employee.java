@@ -8,7 +8,7 @@ public abstract class Employee implements EmployeeContract {
     private String name;
     private int birthYear;
     private int age;
-    private Double monthlyIncome;
+    private double monthlyIncome;
     private int rate;
 
     private Vehicle vehicle;
@@ -39,11 +39,11 @@ public abstract class Employee implements EmployeeContract {
         this.age = age;
     }
 
-    public Double getMonthlyIncome() {
+    public double getMonthlyIncome() {
         return monthlyIncome;
     }
 
-    public void setMonthlyIncome(Double monthlyIncome) {
+    public void setMonthlyIncome(double monthlyIncome) {
         this.monthlyIncome = monthlyIncome;
     }
 
