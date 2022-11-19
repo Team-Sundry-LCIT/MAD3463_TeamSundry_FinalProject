@@ -1,4 +1,9 @@
 package Part2;
 
-public class Car {
+import Part1.Employee;
+
+public class Car extends Vehicle {
+    public Car(String make, String plate, String color, String category) {
+        super(make, plate, color, category);
+    }
 }
