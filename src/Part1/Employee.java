@@ -1,17 +1,19 @@
 package Part1;
-
 import Part2.Vehicle;
+import Part3.EmployeeContract;
 
 import java.util.Calendar;
 
-public abstract class Employee {
+public abstract class Employee implements EmployeeContract {
     private String name;
     private int birthYear;
     private int age;
-    private int monthlyIncome;
+    private double monthlyIncome;
     private int rate;
 
     private Vehicle vehicle;
+
+    private EmployeeContract contract;
 
     public String getName() {
         return name;
@@ -37,11 +39,11 @@ public abstract class Employee {
         this.age = age;
     }
 
-    public int getMonthlyIncome() {
+    public double getMonthlyIncome() {
         return monthlyIncome;
     }
 
-    public void setMonthlyIncome(int monthlyIncome) {
+    public void setMonthlyIncome(double monthlyIncome) {
         this.monthlyIncome = monthlyIncome;
     }
 
@@ -63,6 +65,17 @@ public abstract class Employee {
 
     public abstract double getAnnualIncome();
 
+    public Employee(String name, int birthYear,int rate){
+        this.setName(name);
+        this.setBirthYear(birthYear);
+        if(rate < 10){
+            setRate(10);
+        }
+        /*
+            for else -> set rate as min value between 100 and passed argument. since rate shouldn't be more than 100.
+         */
+        else setRate(Math.min(rate, 100));
+    }
     public Employee(String name, int birthYear,int rate,Vehicle vehicle){
         this.setName(name);
         this.setBirthYear(birthYear);
@@ -91,8 +104,25 @@ public abstract class Employee {
         return "Name: " + getName() + ", a " + getClass().getSimpleName() +
                 "\nAge: "+ calculateAge() +
                 "\n"+ vehicle +
-                "\n" + name + " has Occupation rate: " + rate
+                "\n" + name + " has an Occupation rate: " + rate + "%"
                 ;
+    }
+
+    public void signContract(EmployeeContract contract) {
+        this.monthlyIncome = this.accumulatedSalary();
+        this.contract = contract;
+    }
+
+    public String contractInfo() {
+//        if type(of: self) == Manager.self {
+//            return "\(name) is a manager."
+//        } else if type(of: self) == Programmer.self {
+//            return "\(name) is a programmer."
+//        } else if type(of: self) == Tester.self {
+//            return "\(name) is a tester."
+//        }
+
+        return this.name;
     }
 
 }

@@ -15,6 +15,11 @@ public class Tester extends Employee{
         this.bugs = bugs;
     }
 
+    public Tester(String name, int birthYear, int bugs, int rate){
+        super(name,birthYear,rate);
+        this.setBugs(bugs);
+        printData();
+    }
     public Tester(String name, int birthYear, int bugs, int rate, Vehicle vehicle){
         super(name,birthYear,rate,vehicle);
         this.setBugs(bugs);
@@ -29,7 +34,7 @@ public class Tester extends Employee{
     @Override
     public String toString() {
         return super.toString() +
-                "\nand corrected " + bugs + " bugs." +
+                " and corrected " + bugs + " bugs." +
                 "\nHis/Her estimated annual income is " + getAnnualIncome();
     }
 }
