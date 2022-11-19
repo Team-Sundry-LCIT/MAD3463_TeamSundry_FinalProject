@@ -63,6 +63,17 @@ public abstract class Employee {
 
     public abstract double getAnnualIncome();
 
+    public Employee(String name, int birthYear,int rate){
+        this.setName(name);
+        this.setBirthYear(birthYear);
+        if(rate < 10){
+            setRate(10);
+        }
+        /*
+            for else -> set rate as min value between 100 and passed argument. since rate shouldn't be more than 100.
+         */
+        else setRate(Math.min(rate, 100));
+    }
     public Employee(String name, int birthYear,int rate,Vehicle vehicle){
         this.setName(name);
         this.setBirthYear(birthYear);

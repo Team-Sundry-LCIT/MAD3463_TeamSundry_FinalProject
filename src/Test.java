@@ -24,12 +24,12 @@ public class Test {
 
     public static void hire_test1() {
         ArrayList<Employee> employees = new ArrayList<>();
-        employees.add(new Tester("Serge", 1985,  30, 4,null));
-        employees.add(new Tester("Cindy", 1974,  20,  6, null));
-        employees.add(new Tester("Paul",  1993, 3,  75,null));
-        employees.add(new Tester("Pierre", 1987, 124,50,null));
-        employees.add(new Tester("Matt",  1981,  5,  110,null));
-        employees.add(new Tester("Sarah", 1986,  3,50,null));
+        employees.add(new Tester("Serge", 1985,  30, 4));
+        employees.add(new Tester("Cindy", 1974,  20,  6));
+        employees.add(new Tester("Paul",  1993, 3,  75));
+        employees.add(new Tester("Pierre", 1987, 124,50));
+        employees.add(new Tester("Matt",  1981,  5,  110));
+        employees.add(new Tester("Sarah", 1986,  3,50));
     }
     public static void hire_test2() {
         //        Motorcycle m1 = new Motorcycle("Kawasaki","Custom Plate", "Yellow",  "Race Motorcycle", false);
