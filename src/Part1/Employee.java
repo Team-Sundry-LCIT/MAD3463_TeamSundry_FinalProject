@@ -1,17 +1,19 @@
 package Part1;
-
 import Part2.Vehicle;
+import Part3.EmployeeContract;
 
 import java.util.Calendar;
 
-public abstract class Employee {
+public abstract class Employee implements EmployeeContract {
     private String name;
     private int birthYear;
     private int age;
-    private int monthlyIncome;
+    private Double monthlyIncome;
     private int rate;
 
     private Vehicle vehicle;
+
+    private EmployeeContract contract;
 
     public String getName() {
         return name;
@@ -37,11 +39,11 @@ public abstract class Employee {
         this.age = age;
     }
 
-    public int getMonthlyIncome() {
+    public Double getMonthlyIncome() {
         return monthlyIncome;
     }
 
-    public void setMonthlyIncome(int monthlyIncome) {
+    public void setMonthlyIncome(Double monthlyIncome) {
         this.monthlyIncome = monthlyIncome;
     }
 
@@ -104,6 +106,23 @@ public abstract class Employee {
                 "\n"+ vehicle +
                 "\n" + name + " has an Occupation rate: " + rate + "%"
                 ;
+    }
+
+    public void signContract(EmployeeContract contract) {
+        this.monthlyIncome = this.accumulatedSalary();
+        this.contract = contract;
+    }
+
+    public String contractInfo() {
+//        if type(of: self) == Manager.self {
+//            return "\(name) is a manager."
+//        } else if type(of: self) == Programmer.self {
+//            return "\(name) is a programmer."
+//        } else if type(of: self) == Tester.self {
+//            return "\(name) is a tester."
+//        }
+
+        return this.name;
     }
 
 }

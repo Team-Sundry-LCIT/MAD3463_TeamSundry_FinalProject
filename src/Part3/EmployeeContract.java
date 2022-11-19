@@ -1,6 +1,11 @@
 package Part3;
 
 public interface EmployeeContract {
-    public void signContract(Contract contract);
-    public String contractInfo();
+
+    public String description = "";
+//    public String contractInfo();
+
+    public default double accumulatedSalary() {
+        return 0.0;
+    }
 }
