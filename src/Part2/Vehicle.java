@@ -48,10 +48,10 @@ public abstract class Vehicle {
 
     @Override
     public String toString() {
-        return "\tmake: " + make +
-                "\tplate: "+ plate+
-                "\tcolour: "+ color +
-                "\tcategory: "+ category;
+        return "\n\t- Make: " + make +
+                "\n\t- Plate: "+ plate+
+                "\n\t- Colour: "+ color +
+                "\n\t- Category: "+ category;
     }
 
 }
