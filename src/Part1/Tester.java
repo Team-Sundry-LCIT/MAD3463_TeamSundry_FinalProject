@@ -29,7 +29,7 @@ public class Tester extends Employee{
     @Override
     public String toString() {
         return super.toString() +
-                "\nand corrected " + bugs + " bugs." +
+                " and corrected " + bugs + " bugs." +
                 "\nHis/Her estimated annual income is " + getAnnualIncome();
     }
 }

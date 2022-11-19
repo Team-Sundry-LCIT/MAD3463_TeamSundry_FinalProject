@@ -91,7 +91,7 @@ public abstract class Employee {
         return "Name: " + getName() + ", a " + getClass().getSimpleName() +
                 "\nAge: "+ calculateAge() +
                 "\n"+ vehicle +
-                "\n" + name + " has Occupation rate: " + rate
+                "\n" + name + " has an Occupation rate: " + rate + "%"
                 ;
     }
 

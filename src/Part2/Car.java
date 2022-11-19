@@ -40,7 +40,7 @@ public class Car extends Vehicle {
 
         String description =
                 "\n\t- Gear Type: " + gear +
-                "\n\t- Type: " + type + "\n";
+                "\n\t- Type: " + type ;
 
         return ownsACar + super.toString() + description;
     }
