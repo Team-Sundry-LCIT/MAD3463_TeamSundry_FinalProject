@@ -12,7 +12,7 @@ public abstract class Employee implements EmployeeContract {
     private int rate;
 
     private Vehicle vehicle;
-    public EmployeeContract contract;
+    private EmployeeContract contract;
 
     public EmployeeContract getContract() {
         return contract;

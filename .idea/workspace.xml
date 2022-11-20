@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab703114-90cb-4b8c-9a3c-fbf6d3735f21" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Management.java" afterDir="false" />
+    <list default="true" id="ab703114-90cb-4b8c-9a3c-fbf6d3735f21" name="Changes" comment="Car Class Creation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Part1/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part1/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Part1/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part1/Tester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Part2/Motorcycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part2/Motorcycle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Part2/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part2/Vehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Part3/Permanent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part3/Permanent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Part3/Temporary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part3/Temporary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,19 +108,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="origin/Tilak" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
