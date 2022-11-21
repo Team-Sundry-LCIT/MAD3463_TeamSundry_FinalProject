@@ -1,7 +1,7 @@
 package Part3;
 
 public class Permanent implements EmployeeContract {
-    @Override
+//    @Override
     public String contractInfo() {
         return null;
     }

@@ -49,12 +49,12 @@ public abstract class Vehicle {
     @Override
     public String toString() {
 
-        String ownsACar = "Employee has a " + getClass().getSimpleName();
+        String ownsACar = "Employee has a " + getClass().getSimpleName().toLowerCase();
 
-        return ownsACar + "\n\t- Make: " + make +
-                "\n\t- Plate: "+ plate+
-                "\n\t- Colour: "+ color +
-                "\n\t- Category: "+ category;
+        return ownsACar + "\n\t- make: " + make +
+                "\n\t- plate: "+ plate+
+                "\n\t- color: "+ color +
+                "\n\t- category: "+ category;
     }
 
 }

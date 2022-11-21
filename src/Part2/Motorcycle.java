@@ -23,7 +23,7 @@ public class Motorcycle extends Vehicle {
     public String toString() {
 
         String description =
-                "\n\t- " + (sideCar ? "with" : "without") + "a sidecar";
+                "\n\t- " + (sideCar ? "with" : "without") + " sidecar";
 
         return super.toString() + description;
     }
