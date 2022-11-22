@@ -1,8 +1,3 @@
-import Part1.Employee;
-import Part1.Tester;
-import Part2.Car;
-
-import java.util.ArrayList;
 
 public class Test {
     public static void main(String[] args) {
