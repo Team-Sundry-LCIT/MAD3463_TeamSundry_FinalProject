@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ab703114-90cb-4b8c-9a3c-fbf6d3735f21" name="Changes" comment="Car Class Creation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Management.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Management.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Part3/Permanent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part3/Permanent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
     </list>
