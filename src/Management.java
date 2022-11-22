@@ -73,7 +73,7 @@ public class Management {
 //        Matt.signContract( t2);
 //        Pierre.signContract(p3);
 //        Sarah.signContract( p4);
-        Pierre.signContract(t1);
+       Pierre.signContract(t1);
 
 //        employees.add(Serge);
 //        employees.add(Cindy);

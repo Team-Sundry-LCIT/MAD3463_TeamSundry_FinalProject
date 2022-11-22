@@ -11,7 +11,6 @@ public class Test {
         Management management = new Management();
         management.hire_test1();
 
-
         // Test part 2
         System.out.println("Test 2: ");
         System.out.println("Employees description: ");
