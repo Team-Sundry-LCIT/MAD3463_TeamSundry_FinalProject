@@ -6,7 +6,9 @@ public class Car extends Vehicle {
 
     private String gear;
     private String type;
-
+    /**
+    * All getters and Setters
+    */
     public String getGear() {
         return gear;
     }
@@ -22,17 +24,23 @@ public class Car extends Vehicle {
     public void setType(String type) {
         this.type = type;
     }
-
+    /**
+     * Constructor to pass super class data and the subclass data
+     */
     public Car(String make, String plate, String color, String category, String gear, String type) {
         super(make, plate, color, category);
         this.setGear(gear);
         this.setType(type);
     }
-
+    /**
+     * Constructor to pass super class data
+    */
     public Car(String make, String plate, String color, String category) {
         super(make, plate, color, category);
     }
-
+    /**
+     * @Overrride method return the Car class description
+    */
     @Override
     public String toString() {
         String description =

@@ -67,9 +67,20 @@ public class Management {
 //        Permanent p3 = new Permanent(1,true,4000,100,20);
 //        Permanent p4 = new Permanent(4,true,4500,100,19);
 
-        Pierre.signContract(t1);
+//        Serge.signContract(p1);
+//        Cindy.signContract(p2);
+//        Paul.signContract(t1);
+//        Matt.signContract( t2);
+//        Pierre.signContract(p3);
+//        Sarah.signContract( p4);
+       Pierre.signContract(t1);
 
+//        employees.add(Serge);
+//        employees.add(Cindy);
+//        employees.add(Paul);
         employees.add(Pierre);
+//        employees.add(Matt);
+//        employees.add(Sarah);
 
         for( Employee item : employees ){
             System.out.println("-------------------------");
@@ -81,8 +92,11 @@ public class Management {
         System.out.println("Contracts: ");
         System.out.println("-------------------------");
 
-        for (Employee item : employees){
-            System.out.println(item.contractInfo() + item.contract);
+        for(Employee item : employees) {
+            if ( item.getContract() != null) {
+                System.out.print(item.contractInfo());
+                System.out.println(item.getContract());
+            }
         }
         System.out.println("-------------------------");
     }
