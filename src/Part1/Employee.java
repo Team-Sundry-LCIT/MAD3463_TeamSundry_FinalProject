@@ -98,7 +98,7 @@ public abstract class Employee implements EmployeeContract {
     }
 
     public void printData(){
-        System.out.println("We have a new employee: " + getName() + " a " + getClass().getSimpleName() );
+        System.out.println("We have a new employee: " + getName() + ", a " + getClass().getSimpleName().toLowerCase() + "." );
     }
 
     public int calculateAge(){
@@ -122,7 +122,7 @@ public abstract class Employee implements EmployeeContract {
     }
 
     public String contractInfo() {
-        return getName() + " is a " + getClass().getSimpleName();
+        return getName() + " is a " + getClass().getSimpleName() +". ";
     }
 
 }

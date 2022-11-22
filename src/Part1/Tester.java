@@ -28,7 +28,9 @@ public class Tester extends Employee{
 
     @Override
     public double getAnnualIncome() {
-        return 0;
+        double baseYearlyIncome = (getMonthlyIncome() * 12) * getRate()/100.0;
+        double bonus = gainFactorError * getBugs();
+        return baseYearlyIncome + bonus;
     }
 
     @Override
