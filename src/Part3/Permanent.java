@@ -69,8 +69,10 @@ public class Permanent implements EmployeeContract {
     @Override
     public String toString() {
         String marriedStatus = married ? "is" : "is not";
-        return " he " + marriedStatus + " married and he/she has " + children + " children.\n" +
-                " He/She has worked for "+ accumulatedDays + " days and upon contract his/her monthly salary is " + monthlySalary ;
+        return "He " + marriedStatus + " married " +
+                "and he/she has " + children + " children." +
+                "\nHe/She has worked for "+ accumulatedDays + " days " +
+                "and upon contract his/her monthly salary is " + monthlySalary ;
     }
 
 }
