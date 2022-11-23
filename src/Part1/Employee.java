@@ -74,27 +74,27 @@ public abstract class Employee implements EmployeeContract {
     public abstract double getAnnualIncome();
 
     public Employee(String name, int birthYear,int rate){
-        this.setName(name);
-        this.setBirthYear(birthYear);
+        this.name = name;
+        this.birthYear = birthYear;
         if(rate < 10){
-            setRate(10);
+            this.rate = 10;
         }
         /*
             for else -> set rate as min value between 100 and passed argument. since rate shouldn't be more than 100.
          */
-        else setRate(Math.min(rate, 100));
+        else this.rate = (Math.min(rate, 100));
     }
     public Employee(String name, int birthYear,int rate,Vehicle vehicle){
-        this.setName(name);
-        this.setBirthYear(birthYear);
+        this.name = name;
+        this.birthYear = birthYear;
         if(rate < 10){
-            setRate(10);
+            this.rate = 10;
         }
         /*
             for else -> set rate as min value between 100 and passed argument. since rate shouldn't be more than 100.
          */
-        else setRate(Math.min(rate, 100));
-        this.setVehicle(vehicle);
+        else this.rate = (Math.min(rate, 100));
+        this.vehicle = vehicle;
     }
 
     public void printData(){
@@ -111,8 +111,8 @@ public abstract class Employee implements EmployeeContract {
     public String toString() {
         return "Name: " + getName() + ", a " + getClass().getSimpleName() +
                 "\nAge: "+ calculateAge() +
-                "\n"+ vehicle +
-                "\n" + name + " has an Occupation rate: " + rate + "%"
+                "\n"+ getVehicle() +
+                "\n" + getName() + " has an Occupation rate: " + getRate() + "%"
                 ;
     }
 

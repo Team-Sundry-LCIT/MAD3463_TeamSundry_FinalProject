@@ -32,8 +32,8 @@ public class Temporary implements EmployeeContract  {
 
     @Override
     public String toString() {
-        return "he is a temporary employee with " + hourlySalary +
-                " hourly salary and he has worked for " + accumulatedHours +
+        return "he is a temporary employee with " + getHourlySalary() +
+                " hourly salary and he has worked for " + getAccumulatedHours() +
                 " hours";
     }
 }

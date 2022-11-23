@@ -2,10 +2,10 @@ package Part2;
 
 public abstract class Vehicle {
 
-    private String make = "";
-    private String plate = "";
-    private String color = "";
-    private String category = "";
+    private String make;
+    private String plate;
+    private String color;
+    private String category;
 
     public String getMake() {
         return make;
@@ -40,10 +40,10 @@ public abstract class Vehicle {
     }
 
     public Vehicle(String make, String plate, String color, String category) {
-        this.setMake(make);
-        this.setPlate(plate);
-        this.setColor(color);
-        this.setCategory(category);
+        this.make = make;
+        this.plate = plate;
+        this.color = color;
+        this.category = category;
     }
 
     @Override
@@ -51,10 +51,10 @@ public abstract class Vehicle {
 
         String ownsACar = "Employee has a " + getClass().getSimpleName().toLowerCase();
 
-        return ownsACar + "\n\t- make: " + make +
-                "\n\t- plate: "+ plate+
-                "\n\t- color: "+ color +
-                "\n\t- category: "+ category;
+        return ownsACar + "\n\t- make: " + getMake() +
+                "\n\t- plate: "+ getPlate()+
+                "\n\t- color: "+ getColor() +
+                "\n\t- category: "+ getCategory();
     }
 
 }
