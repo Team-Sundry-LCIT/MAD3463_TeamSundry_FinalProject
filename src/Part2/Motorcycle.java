@@ -11,7 +11,7 @@ public class Motorcycle extends Vehicle {
         this.sideCar = sideCar;
     }
 
-    public boolean isSideCar() {
+    public boolean getSideCar() {
         return sideCar;
     }
 
