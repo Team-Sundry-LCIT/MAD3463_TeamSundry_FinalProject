@@ -4,8 +4,7 @@ public interface EmployeeContract {
     /**
      * @return Accumulated Salary in double format
      */
-    public default double accumulatedSalary() {
+    default double accumulatedSalary() {
         return 0.0;
     }
-
 }
