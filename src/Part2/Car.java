@@ -29,8 +29,8 @@ public class Car extends Vehicle {
      */
     public Car(String make, String plate, String color, String category, String gear, String type) {
         super(make, plate, color, category);
-        this.setGear(gear);
-        this.setType(type);
+        this.gear = gear;
+        this.type = type;
     }
     /**
      * Constructor to pass super class data
