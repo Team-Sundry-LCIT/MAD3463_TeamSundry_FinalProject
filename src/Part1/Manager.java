@@ -24,14 +24,15 @@ public class Manager extends Employee {
         this.clients = clients;
     }
 
-    public Manager(String name, int birthYear, int clients, int rate) {
-        super(name, birthYear, rate);
+    public Manager(String name, int birthYear, int travelDays, int clients) {
+        super(name, birthYear, 100);
         this.travelDays = travelDays;
         this.clients = clients;
         printData();
     }
-    public Manager(String name, int birthYear, int travelDays, int clients, int rate) {
-        super(name, birthYear, rate);
+
+    public Manager(String name, int birthYear, int travelDays, int clients, Vehicle vehicle) {
+        super(name, birthYear,100, vehicle);
         this.travelDays = travelDays;
         this.clients = clients;
         printData();
@@ -55,6 +56,7 @@ public class Manager extends Employee {
     @Override
     public String toString() {
         return super.toString() +
+                "\nHis/Her travelled " + getTravelDays() + " days" +
                 " and has brought " + getClients() + " news clients." +
                 "\nHis/Her estimated annual income is " + getAnnualIncome();
     }

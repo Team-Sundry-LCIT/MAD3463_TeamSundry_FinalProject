@@ -80,7 +80,8 @@ public abstract class Employee implements EmployeeContract {
             this.rate = 10;
         }
         /*
-            for else -> set rate as min value between 100 and passed argument. since rate shouldn't be more than 100.
+        for else -> set rate as min value between 100 and passed argument.
+        since rate shouldn't be more than 100.
          */
         else this.rate = (Math.min(rate, 100));
     }
@@ -91,7 +92,8 @@ public abstract class Employee implements EmployeeContract {
             this.rate = 10;
         }
         /*
-            for else -> set rate as min value between 100 and passed argument. since rate shouldn't be more than 100.
+        for else -> set rate as min value between 100 and passed argument.
+        since rate shouldn't be more than 100.
          */
         else this.rate = (Math.min(rate, 100));
         this.vehicle = vehicle;
@@ -103,7 +105,6 @@ public abstract class Employee implements EmployeeContract {
 
     public int calculateAge(){
         int currentYear = Calendar.getInstance().get(Calendar.YEAR);
-//        int currentYear = Year.now().getValue();
         return currentYear - getBirthYear();
     }
 
