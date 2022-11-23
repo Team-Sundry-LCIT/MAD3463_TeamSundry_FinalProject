@@ -24,6 +24,12 @@ public class Manager extends Employee {
         this.clients = clients;
     }
 
+    public Manager(String name, int birthYear, int clients, int rate) {
+        super(name, birthYear, rate);
+        this.travelDays = travelDays;
+        this.clients = clients;
+        printData();
+    }
     public Manager(String name, int birthYear, int travelDays, int clients, int rate) {
         super(name, birthYear, rate);
         this.travelDays = travelDays;
