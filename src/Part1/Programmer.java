@@ -1,4 +1,5 @@
 package Part1;
+import Part2.Vehicle;
 
 public class Programmer extends Employee{
     private int projects;
@@ -14,6 +15,12 @@ public class Programmer extends Employee{
 
     public Programmer(String name, int birthYear, int projects, int rate) {
         super(name, birthYear, rate);
+        this.projects = projects;
+        printData();
+    }
+
+    public Programmer(String name, int birthYear, int projects, int rate, Vehicle vehicle) {
+        super(name, birthYear, rate, vehicle);
         this.projects = projects;
         printData();
     }
