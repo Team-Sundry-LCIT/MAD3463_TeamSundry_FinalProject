@@ -1,7 +1,5 @@
 package Part2;
 
-import Part1.Employee;
-
 public class Car extends Vehicle {
 
     private String gear;
@@ -44,8 +42,8 @@ public class Car extends Vehicle {
     @Override
     public String toString() {
         String description =
-                "\n\t- Gear Type: " + gear +
-                "\n\t- Type: " + type ;
+                "\n\t- Gear Type: " + getGear() +
+                "\n\t- Type: " + getType() ;
 
         return super.toString() + description;
     }
