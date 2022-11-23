@@ -28,12 +28,14 @@ public class Manager extends Employee {
         super(name, birthYear, rate);
         this.travelDays = travelDays;
         this.clients = clients;
+        printData();
     }
 
     public Manager(String name, int birthYear, int travelDays, int clients, int rate, Vehicle vehicle) {
         super(name, birthYear, rate, vehicle);
         this.travelDays = travelDays;
         this.clients = clients;
+        printData();
     }
 
     @Override
