@@ -38,7 +38,7 @@ public class Management {
         employees = new ArrayList<>();
         employees.add(new Manager("Serge", 1985, 4, 30, vt1));
         employees.add(new Manager("Cindy",1974, 6,  20, 80, vt2));
-        employees.add(new Programmer("Paul",  1993,  3, 75, vt3));
+        employees.add(new Programmer("Paul",  1993,  3, 75, m1));
         employees.add(new Tester("Pierre", 1987, 124, 50, m2));
         employees.add(new Programmer("Matt", 1981, 5,100, vt4));
         employees.add(new Programmer("Sarah", 1986, 3, vt3));
@@ -70,9 +70,9 @@ public class Management {
         Serge.signContract(p1);
         Cindy.signContract(p2);
         Paul.signContract(t1);
-        Matt.signContract( t2);
+        Matt.signContract(t2);
         Pierre.signContract(p3);
-        Sarah.signContract( p4);
+        Sarah.signContract(p4);
 
         employees.add(Serge);
         employees.add(Cindy);

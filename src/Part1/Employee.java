@@ -153,7 +153,7 @@ public abstract class Employee {
      * @return Contract details of the employee
      */
     public String contractInfo() {
-        return getName() + " is a " + getClass().getSimpleName() +". ";
+        return getName() + " is a " + getClass().getSimpleName().toLowerCase() +". ";
     }
 
 }
