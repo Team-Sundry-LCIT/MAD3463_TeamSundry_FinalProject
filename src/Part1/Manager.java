@@ -45,6 +45,10 @@ public class Manager extends Employee {
         printData();
     }
 
+    /**
+     * Calculate the manager annual income
+     * @return Annual income in double
+     */
     @Override
     public double getAnnualIncome() {
         double baseYearlyIncome = (getMonthlyIncome() * 12) * getRate()/100.0;
@@ -53,10 +57,14 @@ public class Manager extends Employee {
         return baseYearlyIncome + clientBonus + expenditure;
     }
 
+    /**
+     * Print manager related data
+     * @return Manager data in String format
+     */
     @Override
     public String toString() {
         return super.toString() +
-                "\nHis/Her travelled " + getTravelDays() + " days" +
+                " He/She travelled " + getTravelDays() + " days" +
                 " and has brought " + getClients() + " news clients." +
                 "\nHis/Her estimated annual income is " + getAnnualIncome();
     }

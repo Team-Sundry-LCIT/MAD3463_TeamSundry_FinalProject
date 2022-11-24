@@ -2,9 +2,8 @@ package Part3;
 
 public interface EmployeeContract {
     /**
+     * Method will calculate the accumulatedSalary base on the contract type
      * @return Accumulated Salary in double format
      */
-    default double accumulatedSalary() {
-        return 0.0;
-    }
+     double accumulatedSalary() ;
 }

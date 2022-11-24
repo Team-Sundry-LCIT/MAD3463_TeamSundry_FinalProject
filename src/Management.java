@@ -37,11 +37,11 @@ public class Management {
     public void hire_test2() {
         employees = new ArrayList<>();
         employees.add(new Manager("Serge", 1985, 4, 30, vt1));
-        employees.add(new Manager("Cindy",1974, 6,  20, vt2));
+        employees.add(new Manager("Cindy",1974, 6,  20, 80, vt2));
         employees.add(new Programmer("Paul",  1993,  3, 75, vt3));
         employees.add(new Tester("Pierre", 1987, 124, 50, m2));
-        employees.add(new Programmer("Matt", 1981, 5, 110, vt4));
-        employees.add(new Programmer("Sarah", 1986, 3,30, vt3));
+        employees.add(new Programmer("Matt", 1981, 5,100, vt4));
+        employees.add(new Programmer("Sarah", 1986, 3, vt3));
 
         for( Employee item : employees ){
             System.out.println("-------------------------");
@@ -91,6 +91,19 @@ public class Management {
         System.out.println("Contracts: ");
         System.out.println("-------------------------");
 
+        for(Employee item : employees) {
+            if ( item.getContract() != null) {
+                System.out.print(item.contractInfo());
+                System.out.println(item.getContract());
+            }
+        }
+        System.out.println("-------------------------");
+
+        Permanent p5 = new Permanent(1,true,5000,200,30);
+        Matt.signContract(p5);
+        System.out.println("-------------------------");
+        System.out.println("Contracts: ");
+        System.out.println("-------------------------");
         for(Employee item : employees) {
             if ( item.getContract() != null) {
                 System.out.print(item.contractInfo());

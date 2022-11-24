@@ -25,13 +25,26 @@ public class Programmer extends Employee{
         printData();
     }
 
+    public Programmer(String name, int birthYear, int projects, Vehicle vehicle) {
+        super(name, birthYear,vehicle);
+        this.projects = projects;
+        printData();
+    }
+
+    /**
+     * Calculate the manager annual income
+     * @return Annual income in double
+     */
     @Override
     public double getAnnualIncome() {
         double baseYearlyIncome = (getMonthlyIncome() * 12) * getRate()/100.0;
         double bonus = gainFactorProjects * getProjects();
         return baseYearlyIncome + bonus;
     }
-
+    /**
+     * Print programmer related data
+     * @return Programmer data in String format
+     */
     @Override
     public String toString() {
         return super.toString() +

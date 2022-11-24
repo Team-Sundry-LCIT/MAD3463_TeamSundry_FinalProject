@@ -46,6 +46,9 @@ public abstract class Vehicle {
         this.category = category;
     }
 
+    /**
+     * @Overrride method return the Vehicle class description in String format
+     */
     @Override
     public String toString() {
 

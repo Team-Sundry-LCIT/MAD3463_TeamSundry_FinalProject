@@ -19,6 +19,9 @@ public class Motorcycle extends Vehicle {
         this.sideCar = sideCar;
     }
 
+    /**
+     * @Overrride method return the Motorcycle class description in String format
+     */
     @Override
     public String toString() {
 
