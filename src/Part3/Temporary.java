@@ -1,7 +1,7 @@
 package Part3;
 
 public class Temporary implements EmployeeContract  {
-    private int hourlySalary;
+    private double hourlySalary;
     private int accumulatedHours;
 
     public Temporary(int hourlySalary, int accumulatedHours) {
@@ -9,12 +9,7 @@ public class Temporary implements EmployeeContract  {
         this.accumulatedHours = accumulatedHours;
     }
 
-    @Override
-    public double accumulatedSalary() {
-        return hourlySalary * accumulatedHours;
-    }
-
-    public int getHourlySalary() {
+    public double getHourlySalary() {
         return hourlySalary;
     }
 
@@ -30,6 +25,18 @@ public class Temporary implements EmployeeContract  {
         this.accumulatedHours = accumulatedHours;
     }
 
+    /**
+     * Calculate the accumulated salary
+     * @return accumulated salary in double
+     */
+    @Override
+    public double accumulatedSalary() {
+        return hourlySalary * accumulatedHours;
+    }
+
+    /**
+     * @Overrride method return the Temporary class description in String format
+     */
     @Override
     public String toString() {
         return "he is a temporary employee with " + getHourlySalary() +

@@ -6,17 +6,6 @@ public class Permanent implements EmployeeContract {
     private double monthlySalary;
     private int bonusPerChildPerMonth;
     private int accumulatedDays;
-    @Override
-    public double accumulatedSalary() {
-        double childBonus = 0.0;
-        double cumulativeSalary = 0.0;
-        if (married && children > 0){
-            childBonus = bonusPerChildPerMonth * children;
-        }
-        double salary = monthlySalary + childBonus;
-        cumulativeSalary = (salary / 20) * accumulatedDays;
-        return cumulativeSalary;
-    }
 
     public int getChildren() {
         return children;
@@ -66,13 +55,31 @@ public class Permanent implements EmployeeContract {
         this.accumulatedDays = accumulatedDays;
     }
 
+    /**
+     * Calculate the accumulated salary
+     * @return accumulated salary in double
+     */
+    @Override
+    public double accumulatedSalary() {
+        double childBonus = 0.0;
+        double cumulativeSalary = 0.0;
+        if (married && children > 0){
+            childBonus = bonusPerChildPerMonth * children;
+        }
+        double salary = monthlySalary + childBonus;
+        cumulativeSalary = (salary / 20) * accumulatedDays;
+        return cumulativeSalary;
+    }
+
+    /**
+     * @Overrride method return the Permanent class description in String format
+     */
     @Override
     public String toString() {
         String marriedStatus = married ? "is" : "is not";
-        return "He " + marriedStatus + " married " +
+        return "he " + marriedStatus + " married " +
                 "and he/she has " + children + " children." +
                 "\nHe/She has worked for "+ accumulatedDays + " days " +
                 "and upon contract his/her monthly salary is " + monthlySalary ;
     }
-
 }

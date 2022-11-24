@@ -26,13 +26,20 @@ public class Tester extends Employee{
         printData();
     }
 
+    /**
+     * Calculate the manager annual income
+     * @return Annual income in double
+     */
     @Override
     public double getAnnualIncome() {
-        double baseYearlyIncome = (getMonthlyIncome() * 12) * getRate()/100.0;
+        double baseYearlyIncome = (getMonthlyIncome() * 12.0) * getRate()/100.0;
         double bonus = gainFactorError * getBugs();
         return baseYearlyIncome + bonus;
     }
-
+    /**
+     * Print tester related data
+     * @return Tester data in String format
+     */
     @Override
     public String toString() {
         return super.toString() +

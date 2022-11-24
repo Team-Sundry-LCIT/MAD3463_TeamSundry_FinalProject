@@ -4,7 +4,7 @@ import Part3.EmployeeContract;
 
 import java.util.Calendar;
 
-public abstract class Employee implements EmployeeContract {
+public abstract class Employee {
     private String name;
     private int birthYear;
     private int age;
@@ -99,14 +99,33 @@ public abstract class Employee implements EmployeeContract {
         this.vehicle = vehicle;
     }
 
+    public Employee(String name, int birthYear,Vehicle vehicle){
+        this.name = name;
+        this.birthYear = birthYear;
+        this.vehicle = vehicle;
+        this.rate = 100;
+    }
+
+    /**
+     * Print employee name and type
+     */
     public void printData(){
         System.out.println("We have a new employee: " + getName() + ", a " + getClass().getSimpleName().toLowerCase() + "." );
     }
 
+    /**
+     * Calculate the current age
+     * @return Age of the employee
+     */
     public int calculateAge(){
         int currentYear = Calendar.getInstance().get(Calendar.YEAR);
         return currentYear - getBirthYear();
     }
+
+    /**
+     * Print employee related details
+     * @return All employee data
+     */
 
     @Override
     public String toString() {
@@ -117,11 +136,22 @@ public abstract class Employee implements EmployeeContract {
                 ;
     }
 
+    /**
+     * Employee can be a permanent or temporary employee. He need to sign a contract. Base on the contract his salary calculated
+     * and set the monthly income.
+     * Print the contract detail we need a Contract object therefore we set contract object.
+     * @param contract details related to the employee
+     */
+
     public void signContract(EmployeeContract contract) {
-        this.setMonthlyIncome(this.accumulatedSalary());
+        this.setMonthlyIncome(contract.accumulatedSalary());
         this.setContract(contract);
     }
 
+    /**
+     * This print employee contract details
+     * @return Contract details of the employee
+     */
     public String contractInfo() {
         return getName() + " is a " + getClass().getSimpleName() +". ";
     }

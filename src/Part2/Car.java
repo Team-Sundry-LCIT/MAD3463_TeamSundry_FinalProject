@@ -36,8 +36,9 @@ public class Car extends Vehicle {
     public Car(String make, String plate, String color, String category) {
         super(make, plate, color, category);
     }
+
     /**
-     * @Overrride method return the Car class description
+     * @Overrride method return the Car class description in String format
     */
     @Override
     public String toString() {
