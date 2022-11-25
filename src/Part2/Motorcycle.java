@@ -1,10 +1,6 @@
 package Part2;
 public class Motorcycle extends Vehicle {
-    private boolean sideCar = false;
-
-    public Motorcycle(String make, String plate, String color, String category) {
-        super(make, plate, color, category);
-    }
+    private boolean sideCar;
 
     public Motorcycle(String make, String plate, String color, String category, boolean sideCar) {
         super(make, plate, color, category);
@@ -20,7 +16,8 @@ public class Motorcycle extends Vehicle {
     }
 
     /**
-     * @Overrride method return the Motorcycle class description in String format
+     * Overrides method and
+     * @return the Motorcycle class description in String format
      */
     @Override
     public String toString() {

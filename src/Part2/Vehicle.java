@@ -47,7 +47,8 @@ public abstract class Vehicle {
     }
 
     /**
-     * @Overrride method return the Vehicle class description in String format
+     * Overrides method and
+     * @return the Vehicle class description in String format
      */
     @Override
     public String toString() {

@@ -5,7 +5,7 @@ import Part2.Vehicle;
 public class Tester extends Employee{
 
     private int bugs;
-    private final int gainFactorError = 10;
+    private static final int gainFactorError = 10;
 
     public int getBugs() {
         return bugs;
@@ -16,9 +16,7 @@ public class Tester extends Employee{
     }
 
     public Tester(String name, int birthYear, int bugs, int rate){
-        super(name,birthYear,rate);
-        this.bugs = bugs;
-        printData();
+        this(name,birthYear,bugs,rate,null);
     }
     public Tester(String name, int birthYear, int bugs, int rate, Vehicle vehicle){
         super(name,birthYear,rate,vehicle);

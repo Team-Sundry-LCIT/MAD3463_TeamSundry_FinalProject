@@ -5,8 +5,9 @@ import Part2.Vehicle;
 public class Manager extends Employee {
     private int travelDays;
     private int clients;
-    private final int gainFactorClient = 500;
-    private final int gainFactorTravel = 100;
+
+    private static final int gainFactorClient = 500;
+    private static final int gainFactorTravel = 100;
 
 
 
@@ -27,17 +28,11 @@ public class Manager extends Employee {
     }
 
     public Manager(String name, int birthYear, int travelDays, int clients) {
-        super(name, birthYear, MAX_RATE);
-        this.travelDays = travelDays;
-        this.clients = clients;
-        printData();
+        this(name,birthYear,travelDays,clients,MAX_RATE,null);
     }
 
     public Manager(String name, int birthYear, int travelDays, int clients, Vehicle vehicle) {
-        super(name, birthYear,MAX_RATE, vehicle);
-        this.travelDays = travelDays;
-        this.clients = clients;
-        printData();
+        this(name,birthYear,travelDays,clients,MAX_RATE,vehicle);
     }
 
     public Manager(String name, int birthYear, int travelDays, int clients, int rate, Vehicle vehicle) {
