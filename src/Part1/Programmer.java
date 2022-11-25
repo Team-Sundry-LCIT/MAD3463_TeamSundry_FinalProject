@@ -3,7 +3,7 @@ import Part2.Vehicle;
 
 public class Programmer extends Employee{
     private int projects;
-    private final int gainFactorProjects = 200;
+    private static final int gainFactorProjects = 200;
 
     public int getProjects() {
         return projects;
@@ -14,9 +14,7 @@ public class Programmer extends Employee{
     }
 
     public Programmer(String name, int birthYear, int projects, int rate) {
-        super(name, birthYear, rate);
-        this.projects = projects;
-        printData();
+        this(name,birthYear,projects,rate,null);
     }
 
     public Programmer(String name, int birthYear, int projects, int rate, Vehicle vehicle) {
@@ -26,9 +24,7 @@ public class Programmer extends Employee{
     }
 
     public Programmer(String name, int birthYear, int projects, Vehicle vehicle) {
-        super(name, birthYear,vehicle);
-        this.projects = projects;
-        printData();
+        this(name,birthYear,projects,MAX_RATE,vehicle);
     }
 
     /**

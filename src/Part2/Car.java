@@ -30,15 +30,10 @@ public class Car extends Vehicle {
         this.gear = gear;
         this.type = type;
     }
-    /**
-     * Constructor to pass super class data
-    */
-    public Car(String make, String plate, String color, String category) {
-        super(make, plate, color, category);
-    }
 
     /**
-     * @Overrride method return the Car class description in String format
+     * Overrides method and
+     * @return the Car class description in String format
     */
     @Override
     public String toString() {
