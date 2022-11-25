@@ -5,6 +5,12 @@ import Part3.EmployeeContract;
 import java.util.Calendar;
 
 public abstract class Employee {
+
+    public static final int MAX_RATE = 100;
+    public static final int MIN_RATE = 10;
+    public static final int NO_OF_MONTHS = 12;
+    public static final double TO_PERCENTAGE = 100.0;
+
     private String name;
     private int birthYear;
     private int age;
@@ -76,34 +82,22 @@ public abstract class Employee {
     public Employee(String name, int birthYear,int rate){
         this.name = name;
         this.birthYear = birthYear;
-        if(rate < 10){
-            this.rate = 10;
+        if(rate < MIN_RATE){
+            this.rate = MIN_RATE;
         }
         /*
         for else -> set rate as min value between 100 and passed argument.
         since rate shouldn't be more than 100.
          */
-        else this.rate = (Math.min(rate, 100));
+        else this.rate = (Math.min(rate, MAX_RATE));
     }
     public Employee(String name, int birthYear,int rate,Vehicle vehicle){
-        this.name = name;
-        this.birthYear = birthYear;
-        if(rate < 10){
-            this.rate = 10;
-        }
-        /*
-        for else -> set rate as min value between 100 and passed argument.
-        since rate shouldn't be more than 100.
-         */
-        else this.rate = (Math.min(rate, 100));
+        this(name, birthYear, rate);
         this.vehicle = vehicle;
     }
 
     public Employee(String name, int birthYear,Vehicle vehicle){
-        this.name = name;
-        this.birthYear = birthYear;
-        this.vehicle = vehicle;
-        this.rate = 100;
+        this(name,birthYear,MAX_RATE,vehicle);
     }
 
     /**

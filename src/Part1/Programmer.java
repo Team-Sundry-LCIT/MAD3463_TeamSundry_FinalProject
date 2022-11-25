@@ -37,7 +37,7 @@ public class Programmer extends Employee{
      */
     @Override
     public double getAnnualIncome() {
-        double baseYearlyIncome = (getMonthlyIncome() * 12) * getRate()/100.0;
+        double baseYearlyIncome = (getMonthlyIncome() * NO_OF_MONTHS) * getRate()/TO_PERCENTAGE;
         double bonus = gainFactorProjects * getProjects();
         return baseYearlyIncome + bonus;
     }

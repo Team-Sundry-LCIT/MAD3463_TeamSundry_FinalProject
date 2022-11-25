@@ -32,7 +32,7 @@ public class Tester extends Employee{
      */
     @Override
     public double getAnnualIncome() {
-        double baseYearlyIncome = (getMonthlyIncome() * 12.0) * getRate()/100.0;
+        double baseYearlyIncome = (getMonthlyIncome() * NO_OF_MONTHS) * getRate()/TO_PERCENTAGE;
         double bonus = gainFactorError * getBugs();
         return baseYearlyIncome + bonus;
     }

@@ -8,6 +8,8 @@ public class Manager extends Employee {
     private final int gainFactorClient = 500;
     private final int gainFactorTravel = 100;
 
+
+
     public int getTravelDays() {
         return travelDays;
     }
@@ -25,14 +27,14 @@ public class Manager extends Employee {
     }
 
     public Manager(String name, int birthYear, int travelDays, int clients) {
-        super(name, birthYear, 100);
+        super(name, birthYear, MAX_RATE);
         this.travelDays = travelDays;
         this.clients = clients;
         printData();
     }
 
     public Manager(String name, int birthYear, int travelDays, int clients, Vehicle vehicle) {
-        super(name, birthYear,100, vehicle);
+        super(name, birthYear,MAX_RATE, vehicle);
         this.travelDays = travelDays;
         this.clients = clients;
         printData();
@@ -51,7 +53,7 @@ public class Manager extends Employee {
      */
     @Override
     public double getAnnualIncome() {
-        double baseYearlyIncome = (getMonthlyIncome() * 12) * getRate()/100.0;
+        double baseYearlyIncome = (getMonthlyIncome() * NO_OF_MONTHS) * getRate()/TO_PERCENTAGE;
         double clientBonus = gainFactorClient * getClients();
         double expenditure = gainFactorTravel * getTravelDays();
         return baseYearlyIncome + clientBonus + expenditure;
