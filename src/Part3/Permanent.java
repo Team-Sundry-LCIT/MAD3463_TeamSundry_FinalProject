@@ -1,6 +1,8 @@
 package Part3;
 
 public class Permanent implements EmployeeContract {
+
+    private final int NO_OF_DAYS = 20;
     private int children;
     private Boolean married;
     private double monthlySalary;
@@ -67,7 +69,7 @@ public class Permanent implements EmployeeContract {
             childBonus = bonusPerChildPerMonth * children;
         }
         double salary = monthlySalary + childBonus;
-        cumulativeSalary = (salary / 20) * accumulatedDays;
+        cumulativeSalary = (salary / NO_OF_DAYS) * accumulatedDays;
         return cumulativeSalary;
     }
 
